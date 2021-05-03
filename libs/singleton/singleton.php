@@ -1,5 +1,5 @@
 <?php
-namespace libs\ko612;
+namespace libs\singleton;
 
 class Singleton
 {

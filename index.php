@@ -1,5 +1,5 @@
 <?php
-require 'libs/ko612/loger.php';
-use Libs\Ko612\Logger as Logger;
+require 'libs/singleton/loger.php';
+use Libs\Singleton\Logger as Logger;
 
 Logger::log("И снова привет!!!");

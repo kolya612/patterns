@@ -1,7 +1,7 @@
 <?php
-namespace libs\ko612;
+namespace libs\singleton;
 
-require_once 'libs\ko612\singleton.php';
+require_once 'libs\singleton\singleton.php';
 
 class Logger extends Singleton
 {
@@ -27,7 +27,7 @@ class Logger extends Singleton
      */
     public function writeLog(string $message): void
     {
-        $date = date('Y-m-d H.m.s');
+        $date = date('Y-m-d H.i.s');
         fwrite($this->fileHandle, "$date: $message\n");
     }
 
